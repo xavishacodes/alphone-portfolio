@@ -92,10 +92,7 @@ export default function Skills() {
           );
         })}
       </div>
-      <div
-        className="mb-5 mb-sm-0"
-        // style={{ minHeight: "400px" }}
-      >
+      <div className="mb-5 mb-sm-0">
         <div className="exp text-center mx-auto mb-3 mt-4 ">RESUME</div>
         <Stack
           direction="row"

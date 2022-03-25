@@ -3,8 +3,6 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-// import { init } from "@emailjs/browser";
-// init("i81BV_D3S6NR4TBo0");
 import emailjs from "emailjs-com";
 
 export default function Contact() {
@@ -13,9 +11,6 @@ export default function Contact() {
   const [comment, setComment] = React.useState(null);
 
   function sendEmail(e) {
-    // console.log(name);
-    // console.log(email);
-    // console.log(comment);
     e.preventDefault();
     emailjs
       .sendForm(
@@ -36,14 +31,12 @@ export default function Contact() {
         <div className="d-flex flex-column justify-content-center">
           <div className="col-10 mx-auto d-flex row justify-content-center">
             <TextField
-              // required
               className="col-10 col-sm-3 mb-4 mb-sm-0 mx-sm-1"
               id="outlined-required"
               label="Name"
               type="text"
               name="name"
               onChange={(e) => setName(e.target.value)}
-              // defaultValue="Hello World"
             />
             <TextField
               className="col-10 col-sm-3 mb-4 mb-sm-0 mx-sm-1"
@@ -52,12 +45,10 @@ export default function Contact() {
               type="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              // autoComplete="current-password"
             />
           </div>
           <div className="com col-10 mx-auto d-flex justify-content-center mt-sm-4">
             <TextField
-              // required
               multiline
               rows="5"
               id="outlined-required"
@@ -66,7 +57,6 @@ export default function Contact() {
               size="large"
               className=" col-sm-6 col-10 mx-auto "
               name="comment"
-              // defaultValue="Hello World"
               onChange={(e) => setComment(e.target.value)}
             />
           </div>

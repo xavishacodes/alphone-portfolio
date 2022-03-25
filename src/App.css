@@ -14,7 +14,6 @@
 }
 .App {
   overflow-x: hidden;
-  /* background-color: #000 !important; */
 }
 .icon {
   font-size: 50px !important;
@@ -32,12 +31,8 @@ a {
   font-size: 50px;
   font-family: "Jost", sans-serif;
 }
-/* 
-.com {
-  width: 100px !important;
-  /*media- kammi pananum, email and name ah yum kammi panu da*/
-/* } */
-*/ .cardy {
+
+.cardy {
   object-fit: fill !important;
 }
 
@@ -60,11 +55,6 @@ a {
     height: 100%;
   }
 }
-
-/* ::-webkit-scrollbar {
-  height: 0px;
-  width: 0px;
-} */
 
 a {
   text-decoration: none !important;
